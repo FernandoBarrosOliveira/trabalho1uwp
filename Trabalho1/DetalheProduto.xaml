@@ -1,0 +1,61 @@
+﻿<Page
+    x:Class="Trabalho1.DetalheProduto"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Trabalho1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <ScrollViewer Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel>
+            <TextBlock Text="Item" HorizontalAlignment="Center" FontSize="36dp"></TextBlock>
+            <Pivot x:Name="produtosPivot" Title="Produto" SelectionChanged="produtosPivot_SelectionChanged">
+                <PivotItem  >
+                    <Image x:Name="imgProduto0" Source="imagem/skol.jpg" HorizontalAlignment="Center" Height="157" RenderTransformOrigin="0.5,0.5" Width="159" >
+                    </Image>
+                </PivotItem>
+                <PivotItem >
+                    <Image x:Name="imgProduto1" Source="imagem/brahma.jpg" HorizontalAlignment="Center" Height="157" RenderTransformOrigin="0.5,0.5" Width="159" >
+                    </Image>
+                </PivotItem >
+                <PivotItem >
+                    <Image x:Name="imgProduto2" Source="imagem/kaiser.jpg" HorizontalAlignment="Center" Height="157" RenderTransformOrigin="0.5,0.5" Width="159" >
+                    </Image>
+                </PivotItem >
+                <PivotItem >
+                    <Image x:Name="imgProduto3" Source="imagem/antartica.jpg" HorizontalAlignment="Center" Height="157" RenderTransformOrigin="0.5,0.5" Width="159" >
+                    </Image>
+                </PivotItem>
+                <PivotItem >
+                    <Image x:Name="imgProduto4" Source="imagem/Itaipava.jpg" HorizontalAlignment="Center" Height="157" RenderTransformOrigin="0.5,0.5" Width="159" >
+                    </Image>
+                </PivotItem>
+                <PivotItem >
+                    <Image x:Name="imgProduto5" Source="imagem/keineken.jpg" HorizontalAlignment="Center" Height="157" RenderTransformOrigin="0.5,0.5" Width="159" >
+                    </Image>
+                </PivotItem>
+            </Pivot>
+                
+            <StackPanel Orientation="Horizontal">
+                <TextBlock  Text="Nome: " HorizontalAlignment="Left" FontSize="24dp"></TextBlock>
+                <TextBlock x:Name="txtNome" Text="Item 1" HorizontalAlignment="Left" FontSize="24dp"></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Valor: " HorizontalAlignment="Left" FontSize="24dp"></TextBlock>
+                <TextBlock x:Name="txtValor" Text="R$ 10,10 " HorizontalAlignment="Left" FontSize="24dp"></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Descrição: " HorizontalAlignment="Left" FontSize="24dp"></TextBlock>
+                <TextBlock x:Name="txtDescricao"  Text="fhdajfhkjsad ashfjkdasf fasjklh dfsadfaf " TextWrapping="Wrap" HorizontalAlignment="Left" FontSize="24dp" Height="91" Width="248"></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="btnEditar" Content="Editar" Background="Blue" Foreground="White" Click="btnEditar_Click" ></Button>
+                <Button x:Name="btnVoltarr" Content="Voltar" Background="Blue" Foreground="White" Click="btnVoltar_Click" ></Button>
+            </StackPanel>
+
+            
+        </StackPanel>
+
+    </ScrollViewer>
+</Page>

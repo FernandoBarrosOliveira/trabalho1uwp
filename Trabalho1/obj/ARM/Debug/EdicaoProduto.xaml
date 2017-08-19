@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="Trabalho1.EdicaoProduto"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Trabalho1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:ConnectionId='1' x:Name="txtCabecalho" Text="Editar Item1" HorizontalAlignment="Center" FontSize="36dp"></TextBlock>
+
+        <TextBlock Text="Título" HorizontalAlignment="Left" FontSize="36dp"></TextBlock>
+        <TextBox x:ConnectionId='2' x:Name="tboxNome" HorizontalAlignment="Stretch"></TextBox>
+
+        <TextBlock Text="Valor" HorizontalAlignment="Left" FontSize="36dp"></TextBlock>
+        <TextBox x:ConnectionId='3' x:Name="tboxValor" HorizontalAlignment="Stretch"></TextBox>
+
+        <TextBlock Text="Descrição:" HorizontalAlignment="Left" FontSize="36dp"></TextBlock>
+        <TextBox x:ConnectionId='4' x:Name="tboxDescricao" HorizontalAlignment="Stretch" Height="164"></TextBox>
+
+        <StackPanel Orientation="Horizontal">
+            <Button x:ConnectionId='5' Content="Cancelar" Name="btnCancelar" Background="Red" Foreground="White" HorizontalAlignment="Left"                           ></Button>
+            <Button x:ConnectionId='6' Content="Salvar" Name="btnSalvar" Background="Blue" Foreground="White" HorizontalAlignment="Right"                         Width="81"></Button>
+        </StackPanel>
+
+
+    </StackPanel>
+</Page>
+

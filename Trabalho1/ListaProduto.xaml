@@ -1,0 +1,90 @@
+﻿<Page
+    x:Class="Trabalho1.ListaProduto"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Trabalho1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ScrollViewer Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel HorizontalAlignment="Center" Padding="20" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+                <TextBlock HorizontalAlignment="Center" FontSize="24dp" Text="Produtos do Fernando"/>
+
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Stretch" Width="{Binding ActualWidth, RelativeSource = {RelativeSource Mode=TemplatedParent}}" Height="{Binding ActualHeight, RelativeSource ={RelativeSource Mode=TemplatedParent}}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" Grid.Row="0" HorizontalAlignment="Stretch">
+                    <Button HorizontalAlignment="Center" x:Name="btnImage0" Height="150" Width="150" Click="Button_Click">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Image x:Name="imgProduto0" Height="auto" Width="auto"  Stretch="Fill" Source="imagem/skol.jpg"  ></Image>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <HyperlinkButton HorizontalAlignment="Center" x:Name="hbtnProduto0" Content="Produto 1" Click="BtnProduto_Click"></HyperlinkButton>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Grid.Row="0" HorizontalAlignment="Stretch">
+                    <Button HorizontalAlignment="Center" x:Name="btnImage1" Height="150" Width="150" Click="Button_Click">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Image  x:Name="imgProduto1" Height="auto" Width="auto" Stretch="Fill" Source="imagem/brahma.jpg" ></Image>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <HyperlinkButton HorizontalAlignment="Center" x:Name="hbtnProduto1" Content="Produto 2" Click="BtnProduto_Click"></HyperlinkButton>
+                </StackPanel>
+                <StackPanel Grid.Column="0" Grid.Row="1">
+                    <Button HorizontalAlignment="Center" x:Name="btnImage2" Height="150" Width="150" Click="Button_Click">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Image x:Name="imgProduto2" Height="auto" Width="auto" Stretch="Fill" Source="imagem/kaiser.jpg"></Image>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <HyperlinkButton HorizontalAlignment="Center" x:Name="hbtnProduto2" Content="Produto 3" Click="BtnProduto_Click"></HyperlinkButton>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Grid.Row="1">
+                    <Button HorizontalAlignment="Center" x:Name="btnImage3" Height="150" Width="150" Click="Button_Click">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Image x:Name="imgProduto3" Height="auto" Width="auto" Stretch="Fill" Source="imagem/antartica.jpg" ></Image>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <HyperlinkButton HorizontalAlignment="Center" x:Name="hbtnProduto3" Content="Produto 1" Click="BtnProduto_Click"></HyperlinkButton>
+                </StackPanel>
+                <StackPanel Grid.Column="0" Grid.Row="2">
+                    <Button HorizontalAlignment="Center" x:Name="btnImage4" Height="150" Width="150" Click="Button_Click">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Image x:Name="imgProduto4" Height="auto" Width="auto" Stretch="Fill" Source="imagem/Itaipava.jpg" ></Image>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <HyperlinkButton HorizontalAlignment="Center" x:Name="hbtnProduto4" Content="Produto " Click="BtnProduto_Click"></HyperlinkButton>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Grid.Row="2">
+                    <Button HorizontalAlignment="Center" x:Name="btnImage5" Height="150" Width="150" Click="Button_Click">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Image x:Name="imgProduto5" Height="auto" Width="auto" Stretch="Fill" Source="imagem/keineken.jpg" ></Image>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <HyperlinkButton HorizontalAlignment="Center" x:Name="hbtnProduto5" Content="Produto 1" Click="BtnProduto_Click"></HyperlinkButton>
+                </StackPanel>
+            </Grid>
+    
+
+        </StackPanel>
+    </ScrollViewer>
+
+</Page>
